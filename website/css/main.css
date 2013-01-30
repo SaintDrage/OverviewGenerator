@@ -83,11 +83,11 @@ a:hover {
 	width: 100%;
 }
 
-.lightbox {
-	background-color: rgba(255,255,255,0.6);
+.content .lightbox {
+	background-color: rgba(255,255,255,0.4);
 	color: #222222;
 	padding: 10px;
-	margin: 10px;
+	margin: 0px;
 }
 
 .row {
@@ -98,6 +98,8 @@ a:hover {
 	width: 900px;
 	margin-right: auto;
 	margin-left: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 footer {
@@ -106,19 +108,19 @@ footer {
 }
 
 .accordion-heading  {
-	background-color: rgba(0,0,0,0.2);
-	border-bottom: 1px solid #444444;
+	background-color: rgba(0,32,64,0.2);
+	border-bottom: 1px solid #bbbbcc;
+	border-top: 1px solid #bbbbcc;
 }
 
 .accordion-inner  {
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(96,128,160,0.2);
 	border-top: 0px;
 	
 }
 
 .accordion-group {
-	border: 1px solid #444444;
-	border-radius: 0px;
+	border: 2px solid #bbbbcc;
 }
 
 .accordion-toggle {
@@ -126,10 +128,26 @@ footer {
 	font-weight: bold;
 }
 
+.nolist {
+	list-style: none;
+}
 
+.nolist li {
+	line-height: 21px;
+}
 
+i.checkbox {
+	font-size: 21px;
+	font-weight: bold;
+}
 
+.rounded {
+	border-radius: 5px;
+}
 
+.content .row-fluid {
+	margin-bottom: 20px;
+}
 
 
 
