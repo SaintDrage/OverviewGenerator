@@ -1,8 +1,75 @@
+body {
+	background-image: url(../img/background.jpg);
+	background-color: #000000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 120px;
+}
 
+.navbar {
+	line-height: 60px;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.navbar-inverse  .navbar-inner {
+	background-color: rgba(0,0,0,0.2);
+	background-image: none;
+	border-color: #252525;
+}
+
+.container {
+	width: 900px;
+}
+
+.navbar-fixed-top .container {
+	width: 900px;
+}
+
+.hero-unit {
+	background-color: inherit;
+	padding:60px 0px 60px;
+	color: #eeeeee;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+hr {
+	border-top: 1px solid #444444;
+	border-bottom: none;
+}
+
+li {
+	line-height: inherit;
+}
+
+a:hover {
+	color: #08c;
+}
+
+.navbar-inverse .nav  li > a {
+	font-size: 20px;
+	color: #dddddd;
+	text-shadow: rgba(0,0,0,0.5) 0.1em 0.1em 0.2em;
+	padding: 10px 45px 10px;
+}
+
+.navbar-inverse .nav  li  a > i {
+	font-size: 40px;
+}
+
+.navbar-inverse .nav  li > a:hover {
+	color: #ffffff;
+	background-color: rgba(0,0,0,0.1);
+	
+}
+
+.navbar-inverse .nav  li.active > a {
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.navbar-inverse .nav  li.active > a:hover {
+	background-color: rgba(0,0,0,0.2);
+}
 
 
 
