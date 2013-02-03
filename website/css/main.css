@@ -37,8 +37,10 @@ body {
 }
 
 hr {
-	border-top: 1px solid #444444;
+	border-top: 1px solid rgba(0,0,0,0.2);
 	border-bottom: none;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 li {
@@ -53,11 +55,15 @@ a:hover {
 	font-size: 20px;
 	color: #dddddd;
 	text-shadow: rgba(0,0,0,0.5) 0.1em 0.1em 0.2em;
-	padding: 10px 45px 10px;
+	padding: 10px 35px 10px;
 }
 
 .navbar-inverse .nav  li  a > i {
 	font-size: 40px;
+}
+
+.navbar-inverse .nav  li  a > i.small {
+	font-size: 20px;
 }
 
 .navbar-inverse .nav  li > a:hover {
@@ -75,6 +81,49 @@ a:hover {
 	background-color: rgba(0,0,0,0.2);
 }
 
+.navbar .nav li.dropdown.open > .dropdown-toggle {
+	background-color: rgba(0,0,0,0.1);
+}
+
+.dropdown-menu {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 0px;
+	border-color: #252525;
+	border: 0px;
+	margin-top: 0px;
+}
+
+.dropdown-menu .active > a {
+	background-image: none;
+}
+
+.dropdown-menu li > a:hover {
+	background-image: none;
+}
+
+.dropdown-menu .divider {
+	width: 100%;
+	border: 0px;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.nav-header { 
+	color: #eeeeee;
+	font-size: 16px;
+}
+
+.dropdown-menu li.dmenu > a{
+	font-size: 18px;	
+}
+
+.navbar .nav > li > .woei::before {
+	display: none;
+}
+
+.navbar .nav > li > .woei::after {
+	display: none;
+}
+
 .darkbox {
 	background-color: rgba(0,0,0,0.2);
 	color: #eeeeee;
@@ -84,7 +133,7 @@ a:hover {
 }
 
 .content .lightbox {
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.5);
 	color: #222222;
 	padding: 10px;
 	margin: 0px;
@@ -149,6 +198,31 @@ i.checkbox {
 	margin-bottom: 20px;
 }
 
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:22px;
+    height:22px;
+    background:url(../img/glyphicons_153_unchecked.png) no-repeat;
+	margin:-1px 4px 0 0;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    background:url(../img/glyphicons_152_check.png) no-repeat;
+}
+
+label {
+	font-size: 16px;
+}
+
+.btn {
+	vertical-align: top;
+}
 
 
 
